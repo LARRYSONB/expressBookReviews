@@ -33,7 +33,7 @@ public_users.get('/isbn/:isbn',function (req, res) {
 public_users.get('/author/:author',function (req, res) {
   //Write your code here
   const author = req.params.author;
-  let filtered_book = books.filter((books) => book.author === author);
+  let filtered_books = books.filter((book) => book.author === author);
   res.send(filtered_books);
 });
 
