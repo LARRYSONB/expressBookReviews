@@ -1,0 +1,8 @@
+theia@theia-larrysonbiya:/home/project$ curl -X POST http://localhost:5000/register \
+
+-H "Content-Type: application/json" \
+
+-d '{"username": "larryson", "password": "mlarryspassword"}'
+{"message":"Unable to register user."}bash: -H: command not found
+bash: -d: command not found
+theia@theia-larrysonbiya:/home/project$ 
