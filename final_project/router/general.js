@@ -33,8 +33,16 @@ public_users.get('/isbn/:isbn',function (req, res) {
 public_users.get('/author/:author',function (req, res) {
   //Write your code here
   const author = req.params.author;
-  let filtered_books = books.filter((book) => book.author === author);
-  res.send(filtered_books);
+  const book = object.keys(books);
+  
+  book.forEach((unikBook) => {
+  if (unikBook[author] === author ) {
+  return res.status(200).send(json(unikBook));
+  }else {
+    return res.status(404).send(json({ message: "No books found by this author" }));
+  }
+
+  
 });
 
 // Get all books based on title
