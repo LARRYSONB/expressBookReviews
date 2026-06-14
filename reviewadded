@@ -1,0 +1,2 @@
+theia@theia-larrysonbiya:/home/project$ curl -X PUT "http://localhost:5000/customer/auth/review/123456?review=Amazing%20read!"
+{"message":"User not logged in"}theia@theia-larrysonbiya:/home/project$
